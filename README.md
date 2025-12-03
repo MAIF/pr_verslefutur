@@ -92,7 +92,7 @@ Exemples de tableau de résultat par période de retour :
 
 ![resultats](/assets/resultats.png)
 
-## Nimes Analyse des résultats
+## Nimes : Analyse des résultats
 Durant le hackathon, les travaux ont été réalisés sur la ville de **Nimes**. 
 Les résultats et graphiques suivants concernent seulement un périmèmtre autour de la ville de Nimes et ses alentours.
 
@@ -151,4 +151,11 @@ Dans le cadre du hackathon, il est demandé de faire les retours aux questions s
 * pour les données horaires, avoir une meilleure visibilité de la dispersion
 * avoir une idée de préconisation des modèles à utiliser pour différents cas d'usage
 * faciliter le lien entre les jeux de données et les périodes de référence pour la TRACC
+
+## Contributeurs
+- Delphine Régnier
+- Antoine Colmet-Daage
+- Benjamin Viaud
+- Vivien Guette
+- Thomas Bouché
 
