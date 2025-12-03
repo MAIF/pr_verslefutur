@@ -68,7 +68,7 @@ Les données [SAFRAN](https://www.data.gouv.fr/datasets/donnees-changement-clima
 
 ## 📂 Ressources
 ### Les données
-Les données sout fournies via un S3. 
+Les données sont fournies via un S3. 
 Toutes les informations pour le téléchargement sont [ici](https://guides.data.gouv.fr/guide-du-participant-au-hackathon-le-climat-en-donnees/ressources-du-hackathon/donnees)
 
 Pour les télécharger en python, il est possible d'utiliser les librairies `requests` ou `wget`
@@ -105,9 +105,11 @@ La liste des données est présente dans la section - **Usage des données**
 
 
 Zone sélectionnée (EPSG:4326)
+
 Longitude :
 - Minimum : 4.26°
 - Maximum : 4.48°
+
 Latitude :
 - Minimum : 43.766°
 - Maximum : 43.92°
@@ -131,5 +133,27 @@ Illustration de l'évolution des périodes de retour :
 ![evolution_risque](assets/evolution_risque.png)
 ---
 
+## Retours consolidés sur les données exploitées
+Dans le cadre du hackathon, il est demandé de faire les retours aux questions suivantes : 
 
+
+### Quelles erreurs, incohérences ou anomalies identifiées ? (techniques et scientifiques) ?
+
+* Il existe un écart important entre Comephore et Safran pour la journée du 22/09/2003 qui impacte fortement les périodes de retour
+* Au sein d’une même méthode de descente d’échelle, notamment les émulateurs, on observe une forte dispersion des périodes de retour
+* Les émulateurs utilisant une simulation HR de type ALADIN, restent assez éloignés du RCM à partir duquel ils ont été émulés
+* Bien que corrigés par les données climatiques de référence Safran, les RCM, émulateurs et CPRCM que nous avons étudiés, présentent des périodes de retour là encore assez différentes de celles calculées sur les données de référence Safran
+* Les périodes de retours issues du CPRCM sont plutôt dans la fourchette haute
+* Sur les données horaires CPRCM, les outils de référence que l'on utilise ne sont pas toujours homogènes (Comephore, Montana, analyses ponctuelles pluviomètre)
+
+### Quelles difficultés d’exploitation ? Quelles pistes de résolution ?
+
+* difficulté d'exploitation de la base de données Comephore sur data.gouv (projection, pas de temps mensuel)
+* de manière générale, il serait intéressant de pouvoir télécharger des masques géographiques de données
+
+### Quelles limites pour le cas d’usage traité ? Les données proposées sont-elles adaptées aux exigences de votre domaine sectoriel ou géographique d’application (résolution spatiale et temporelle, couverture spatiale et temporelle, etc.) ?
+
+* pour les données horaires, avoir une meilleure visibilité de la dispersion
+* avoir une idée de préconisation des modèles à utiliser pour différents cas d'usage
+* faciliter le lien entre les jeux de données et les périodes de référence pour la TRACC
 
