@@ -36,8 +36,20 @@ Ce projet s’inscrit dans le cadre du **Hackathon 2025 : “Le climat en donné
 - Offre de **formation** pour les élus et agents.  
 
 ### **Usage des données**  
-- Estimation des **périodes de retour** des pluies extrêmes.  
-- **Sources et nature des données :** *(à compléter)*.  
+- Estimation des **périodes de retour** des pluies extrêmes. 
+
+- **Sources des données :** 
+
+| **Expériment**                     | **GCM**             | **Membre**       | **Méthode descente d’échelle** | **Simulation haute résolution**                     | **Données climatiques de référence** | **Ajustement statistique** | **Variable** | **Fréquence** | **Grille de sortie & Résolution** | **Période**   |
+|------------------------------------|----------------------|-------------------|---------------------------------|------------------------------------------------------|----------------------------------------|----------------------------------------|-------------|-------------|------------------------------------|---------------|
+| historical, ssp370, ssp585         | CNRM-ESM2-1         | r1                | RCM                             | CNRM-ALADIN64E1                                      | SAFRAN                                 | MF-CDFt                                | pr          | jour        | SAFRAN 8 km                        | 1950-2100    |
+| historical, ssp370                 | MPI-ESM1-2-HR       | r1                | RCM                             | HCLIM43-ALADIN                                       | SAFRAN                                 | MF-CDFt                                | pr          | jour        | SAFRAN 8 km                        | 1950-2100    |
+| historical, ssp370                 | CNRM-ESM2-1         | r1                | CPRCM                           | CNRM-AROME46t1                                       | SAFRAN                                 | MF-CDFt                                | pr          | jour        | SAFRAN 8 km                        | 1990-2100    |
+| historical, ssp370                 | CNRM-ESM2-1         | r1                | CPRCM                           | CNRM-AROME46t1                                       | COMEPHORE                               | MF-CDFt                                | pr          | heure       | ALPX3 2,5 km                        | 1990-2100    |
+| historical, ssp370, ssp585         | MPI-ESM1-2-LR       | 10 (r1 à r10)     | EMULATEUR                       | CNRM-ALADIN63-emul-CNRM-UNET11-tP22                  | SAFRAN                                 | MF-CDFt                                | pr          | jour        | SAFRAN 8 km                        | 1850-2100    |
+.
+
+Les données [SAFRAN](https://www.data.gouv.fr/datasets/donnees-changement-climatique-sim-quotidienne/reuses_and_dataservices/) et [COMEPHORE](https://www.data.gouv.fr/datasets/reanalyses-comephore/) ont également été utilisées
 
 ### **Méthodologie**  
 - Extraction des **maxima annuels**.  
@@ -79,7 +91,7 @@ Les calculs ont été réalisés à l'aide d'un fichier Excel, disponible [ici](
 A noter, que ce sont des formules simples qui pourraient être codés en Python.
 
 
-### Résultats
+### Livrables
 Tableaux des périodes de retour selon :
 - Types de modèles
 - Scénarios climatiques / Historique
@@ -87,9 +99,38 @@ Tableaux des périodes de retour selon :
 
 Graphiques de visualisation des périodes de retour :
 
+## Nimes Analyse des résultats
+Durant le hackathon, les travaux ont été réalisés sur la ville de **Nimes**. 
+Les résultats et graphiques suivants concernent seulement un périmèmtre autour de la ville de Nimes et ses alentours.
+
+La liste des données est présente dans la section - **Usage des données** 
 
 
+Zone sélectionnée (EPSG:4326)
+Longitude :
+- Minimum : 4.26°
+- Maximum : 4.48°
+Latitude :
+- Minimum : 43.766°
+- Maximum : 43.92°
 
+### Données historiques
+
+![pr_historique](assets/pr_historique.png)
+
+### Scénarios climatiques
+
+![futur_quotidien](assets/futur_quotidien.png)
+
+### Apport des données horaires
+
+![horaire](assets/horaire.png)
+
+
+#### Illustration
+Illustration de l'évolution des périodes de retour : 
+
+![evolution_risque](assets/evolution_risque.png)
 ---
 
 
