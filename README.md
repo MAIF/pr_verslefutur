@@ -1,4 +1,4 @@
-# 🌍 Période de retour vers le futur
+# 🚀 Période de retour vers le futur
 **Projet : Analyse des pluies extrêmes et périodes de retour dans un contexte de réchauffement climatique**
 
 ---
@@ -74,7 +74,8 @@ En entrée de ces calculs, il faut avoir 2 colonnes :
 
 Ensuite, une loi de Gumbel est ajustée à partir de ces données pour calculer la période de retour.
 
-Les calculs ont été réalisés à l'aide d'un fichier Excel, disponible [ici](/home/thomas/hackathon_climat_donnees/src/calculateur_periode_retour.xlsx)
+Les calculs ont été réalisés à l'aide d'un fichier Excel, disponible [ici](src/calculateur_periode_retour.xlsx)
+
 A noter, que ce sont des formules simples qui pourraient être codés en Python.
 
 
