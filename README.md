@@ -31,7 +31,7 @@ Cette *réutilisation* s’inscrit dans le cadre du **Hackathon 2025 : “Le cli
 
 ## ✅ Solution proposée  
 ### **Description et fonctionnalités**  
-- Offre d’accompagnement *Territoires et Prévention* enrichie d’un diagnostic du risque de ruissellement en fonction des scénarios de réchauffement climatique.
+- Offre d’accompagnement [*Territoires et Prévention*](https://territoires-et-prevention.smacl.fr/) enrichie d’un diagnostic du risque de ruissellement en fonction des scénarios de réchauffement climatique.
 - Offre de **formation** pour les élus et agents.  
 
 ### **Usage des données**  
@@ -88,14 +88,9 @@ Les calculs ont été réalisés à l'aide d'un fichier Excel, disponible [ici](
 
 A noter, que ce sont des formules simples qui pourraient être codés en Python.
 
+Exemples de tableau de résultat par période de retour :
 
-### Livrables
-Tableaux des périodes de retour selon :
-- Types de modèles
-- Scénarios climatiques / Historique
-- Pas de temps (horaire / quotidien)
-
-Graphiques de visualisation des périodes de retour :
+![resultats](/assets/resultats.png)
 
 ## Nimes Analyse des résultats
 Durant le hackathon, les travaux ont été réalisés sur la ville de **Nimes**. 
