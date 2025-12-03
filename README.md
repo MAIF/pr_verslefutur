@@ -4,20 +4,19 @@
 ---
 
 ## 📌 Contexte  
-Selon **Météo-France**, *le réchauffement climatique ne bouleverse pas seulement les températures : il modifie aussi la fréquence, l’intensité et la répartition des précipitations en France.*  
-Dans une France à **+4 °C**, les pluies intenses se renforceraient, avec **+15 % en moyenne** et jusqu’à **+20 % sur la moitié nord**, aggravant le risque d’inondation, notamment en zones urbaines.
+Selon **Météo-France**, *le réchauffement climatique ne bouleverse pas seulement les températures : il modifie aussi la fréquence, l’intensité et la répartition des précipitations en France.*
+Dans une France à **+4 °C**, l’impact de ces changements des régimes de pluies peuvent aggraver le risque d’inondation par ruissellement en zones urbaines.
 
-Ce projet s’inscrit dans le cadre du **Hackathon 2025 : “Le climat en données”**.
+Cette *réutilisation* s’inscrit dans le cadre du **Hackathon 2025 : “Le climat en données”**.
 
 ---
 
 ## 🔍 Problématiques scientifiques  
-1. **Identification des pluies extrêmes sur la période historique**  
-   - Analyse de l’apport des données **CPRCM** et comparaison avec différents modèles et les observations **COMEPHORE** et **SAFRAN**.  
-2. **Analyse des données horaires vs quotidiennes**  
-   - Comparaison des occurrences de pluies extrêmes avec les observations historiques.  
-3. **Impact du réchauffement climatique sur les intensités à période de retour équivalente**  
-   - Évaluation pour différents horizons de la **TRACC** et comparaison des résultats avec les données CPRCM (1h / 24h / quotidien).  
+1. **Estimations des pluies extrêmes sur la période historique ?**  
+   - Analyse de l'apport des données CPRCM et comparaison de plusieurs sources de données : modélisations et réanalyses  
+2. **Quel apport des données horaires pour estimer les pluies 24h par rapport au données quotidiennes ?**  
+3. **Evolution des intensités de précipitations par période de retour pour l’horizon TRACC 2.7°C ?**  
+   - Résultats des données CPRCM (1h/3h/6h/12h/24h/quotidien)
 
 ---
 
@@ -32,11 +31,11 @@ Ce projet s’inscrit dans le cadre du **Hackathon 2025 : “Le climat en donné
 
 ## ✅ Solution proposée  
 ### **Description et fonctionnalités**  
-- Offre d’accompagnement **Territoires et Prévention**, enrichie d’un diagnostic du risque de ruissellement en fonction des scénarios climatiques.  
+- Offre d’accompagnement *Territoires et Prévention* enrichie d’un diagnostic du risque de ruissellement en fonction des scénarios de réchauffement climatique.
 - Offre de **formation** pour les élus et agents.  
 
 ### **Usage des données**  
-- Estimation des **périodes de retour** des pluies extrêmes. 
+- Les données permettent d’estimer les **périodes de retour** des pluies extrêmes.
 
 - **Sources des données :** 
 
@@ -52,19 +51,18 @@ Ce projet s’inscrit dans le cadre du **Hackathon 2025 : “Le climat en donné
 Les données [SAFRAN](https://www.data.gouv.fr/datasets/donnees-changement-climatique-sim-quotidienne/reuses_and_dataservices/) et [COMEPHORE](https://www.data.gouv.fr/datasets/reanalyses-comephore/) ont également été utilisées
 
 ### **Méthodologie**  
-- Extraction des **maxima annuels**.  
-- Ajustement via une loi de probabilité **GEV (Gumbel)**.
+- Extraction des maxima annuels et ajustement via une loi de probabilité de type **GEV (Gumbel)**.
 
 ---
 
 ## 🌱 Impact envisagé  
 - **Objectifs :**  
-  - Renforcer la collaboration entre assureurs et collectivités.  
-  - Intégrer le changement climatique dans les politiques d’urbanisation.  
-  - Améliorer la connaissance des impacts climatiques.  
+  - Accompagner les territoires en enrichissant les collaborations entre assureurs et collectivités.
+  - Contribuer à la résilience et à l’intégration du changement climatique dans les politiques d’urbanisation.
+  - Améliorer la connaissance des impacts climatiques.
 
-- **Usagers visés :**  
-  Collectivités, élus, agents → **Sensibilisation et résilience territoriale**.
+- **Usagers visés et bénéfices :**  
+  **Collectivités, élus, agents** : sensibilisation et renforcement de la résilience territoriale.
 
 ---
 
